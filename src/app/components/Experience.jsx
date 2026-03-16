@@ -9,8 +9,8 @@ const MILESTONES = [
     title: "Full-Stack Java Developer",
     company: "Building Enterprise Solutions",
     points: [
-      "Architected and developed DataKavach — a security platform with AWS Rekognition facial recognition",
-      "Built cross-platform mobile apps using Angular + Capacitor for Abu Lehri community platform",
+      "Architected and developed Aegis Secure Sentinel — a security platform with AWS Rekognition facial recognition",
+      "Built cross-platform mobile apps using Angular + Capacitor for CommuniTree Mobile community platform",
       "Designed and implemented real-time WebSocket features for live alerts and notifications",
       "Managed cloud deployments on AWS (S3, Rekognition) and Google Cloud Storage",
     ],
@@ -20,7 +20,7 @@ const MILESTONES = [
     title: "Java Developer",
     company: "Web Application Development",
     points: [
-      "Developed REST APIs with Spring Boot & Spring Security for IBT banking portal",
+      "Developed REST APIs with Spring Boot & Spring Security for GlobalTrade Nexus banking portal",
       "Built Angular frontends with reactive forms, JWT auth, and role-based access control",
       "Created admin dashboards using React, Material UI, and Vite for organization management",
       "Implemented data export features with Apache POI and Excel processing pipelines",
@@ -34,7 +34,7 @@ const MILESTONES = [
       "Mastered Java 17, Spring Boot fundamentals, and the MVC design pattern",
       "Built foundational projects with MySQL, JPA/Hibernate, and RESTful services",
       "Learned Angular and React frameworks for modern single-page applications",
-      "Developed the Yukti Classes educational website using Next.js",
+      "Developed the ScholarStream Portal educational website using Next.js",
     ],
   },
 ];
