@@ -7,7 +7,7 @@ import styles from "./Projects.module.css";
 const PROJECTS = [
   {
     id: 1,
-    title: "DataKavach",
+    title: "Aegis Secure Sentinel",
     subtitle: "Security & Surveillance Platform",
     description:
       "Enterprise-grade security management system with facial recognition using AWS Rekognition, real-time WebSocket alerts, QR-based access control, and a comprehensive analytics dashboard with interactive charts.",
@@ -18,7 +18,7 @@ const PROJECTS = [
   },
   {
     id: 2,
-    title: "IBT Portal",
+    title: "GlobalTrade Nexus",
     subtitle: "International Banking & Trade System",
     description:
       "Robust international banking portal with role-based access, secure JWT authentication, multi-country support, and comprehensive trade transaction management. Built for handling complex financial workflows.",
@@ -29,7 +29,7 @@ const PROJECTS = [
   },
   {
     id: 3,
-    title: "Abu Lehri",
+    title: "CommuniTree Mobile",
     subtitle: "Cross-Platform Community App",
     description:
       "Community management platform delivered as a native mobile app using Capacitor. Features include Firebase push notifications, speech recognition, and a complete member management system with real-time updates.",
@@ -40,7 +40,7 @@ const PROJECTS = [
   },
   {
     id: 4,
-    title: "Sangh Admin Dashboard",
+    title: "Apex Management Suite",
     subtitle: "Modern Admin Panel",
     description:
       "Feature-rich admin dashboard built with React 19 and Material UI. Includes advanced data tables, animated celebrations, real-time toast notifications, and comprehensive CRUD operations for organization management.",
@@ -51,7 +51,7 @@ const PROJECTS = [
   },
   {
     id: 5,
-    title: "Sowilo",
+    title: "Solaris Digital Hub",
     subtitle: "Business Landing Platform",
     description:
       "High-performance business website built with Next.js 15 featuring smooth Swiper carousels, EmailJS contact integration, syntax highlighting, and Isotope-based dynamic content filtering with stunning animations.",
@@ -62,7 +62,7 @@ const PROJECTS = [
   },
   {
     id: 6,
-    title: "Yukti Classes",
+    title: "ScholarStream Portal",
     subtitle: "Educational Institute Website",
     description:
       "Modern, responsive website for an educational institute built with Next.js. Features student galleries, course information, admission workflows, and optimized SEO for local discovery.",
@@ -73,7 +73,7 @@ const PROJECTS = [
   },
   {
     id: 7,
-    title: "Exports Backend",
+    title: "TradeMatrix Core API",
     subtitle: "Trade Data Management API",
     description:
       "Scalable REST API backend for managing international export/import data. Features Excel file processing with Apache POI, secure endpoints with Spring Security, and efficient data pipelines for trade analytics.",

@@ -125,7 +125,7 @@ export default function About() {
 
           <motion.div className={styles.infoCards} {...fadeUp(0.4)}>
             <div className={styles.infoCard}>
-              <div className={styles.infoIcon}>🎯</div>
+              <div className={styles.infoIcon}>⚡</div>
               <div>
                 <h4 className={styles.infoTitle}>Focus Area</h4>
                 <p className={styles.infoText}>Enterprise Web Applications, REST APIs, Microservices & Modern SPAs</p>
@@ -146,7 +146,7 @@ export default function About() {
               </div>
             </div>
             <div className={styles.infoCard}>
-              <div className={styles.infoIcon}>🚀</div>
+              <div className={styles.infoIcon}>✨</div>
               <div>
                 <h4 className={styles.infoTitle}>Passion</h4>
                 <p className={styles.infoText}>Building products that solve real-world problems at scale</p>
