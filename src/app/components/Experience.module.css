@@ -1,0 +1,105 @@
+.timeline {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.timelineLine {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-rose), var(--color-violet), var(--color-sky), transparent);
+}
+
+.milestone {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 48px;
+}
+
+.milestone:last-child {
+  margin-bottom: 0;
+}
+
+.milestoneDot {
+  position: absolute;
+  left: 13px;
+  top: 8px;
+  z-index: 2;
+}
+
+.milestoneCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: var(--transition-smooth);
+}
+
+.milestoneCard:hover {
+  border-color: var(--border-warm);
+  box-shadow: var(--shadow-warm);
+}
+
+.milestone:nth-child(2) .milestoneCard { border-left: 2px solid var(--color-rose); }
+.milestone:nth-child(3) .milestoneCard { border-left: 2px solid var(--color-violet); }
+.milestone:nth-child(4) .milestoneCard { border-left: 2px solid var(--color-sky); }
+
+.year {
+  display: inline-block;
+  padding: 4px 12px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+}
+
+.milestone:nth-child(2) .year { background: var(--color-rose-dim); color: var(--color-rose); }
+.milestone:nth-child(3) .year { background: var(--color-violet-dim); color: var(--color-violet); }
+.milestone:nth-child(4) .year { background: var(--color-sky-dim); color: var(--color-sky); }
+
+.milestoneTitle {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.company {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.points li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.points li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--color-amber);
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .timeline { max-width: 100%; }
+  .milestone { padding-left: 50px; }
+}

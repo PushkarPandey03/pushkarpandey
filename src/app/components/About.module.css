@@ -1,0 +1,145 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Terminal card */
+.terminal {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.terminalBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminalTitle {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.terminalBody {
+  padding: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 1.9;
+  color: var(--text-secondary);
+}
+
+.terminalBody p {
+  display: flex;
+  gap: 16px;
+  white-space: nowrap;
+}
+
+.lineNum {
+  color: var(--text-muted);
+  user-select: none;
+  min-width: 20px;
+  text-align: right;
+  opacity: 0.5;
+}
+
+.mdH {
+  color: var(--color-coral);
+  font-weight: 600;
+}
+
+.highlight {
+  color: var(--color-amber);
+  font-weight: 500;
+}
+
+.terminalBody strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Info cards */
+.infoCards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.infoCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: var(--transition-smooth);
+}
+
+.infoCard:nth-child(1) { border-left: 3px solid var(--color-coral); }
+.infoCard:nth-child(2) { border-left: 3px solid var(--color-amber); }
+.infoCard:nth-child(3) { border-left: 3px solid var(--color-violet); }
+.infoCard:nth-child(4) { border-left: 3px solid var(--color-lime); }
+
+.infoCard:hover {
+  border-color: var(--border-warm);
+  transform: translateX(6px);
+}
+
+.infoCard:nth-child(1):hover { border-left-color: var(--color-coral); }
+.infoCard:nth-child(2):hover { border-left-color: var(--color-amber); }
+.infoCard:nth-child(3):hover { border-left-color: var(--color-violet); }
+.infoCard:nth-child(4):hover { border-left-color: var(--color-lime); }
+
+.infoIcon {
+  font-size: 1.5rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-violet-dim);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.infoCard:nth-child(1) .infoIcon { background: var(--color-coral-dim); }
+.infoCard:nth-child(2) .infoIcon { background: var(--color-amber-dim); }
+.infoCard:nth-child(3) .infoIcon { background: var(--color-violet-dim); }
+.infoCard:nth-child(4) .infoIcon { background: var(--color-lime-dim); }
+
+.infoTitle {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.infoText {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .terminalBody p {
+    white-space: normal;
+  }
+}
