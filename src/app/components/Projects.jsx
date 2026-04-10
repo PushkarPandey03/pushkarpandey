@@ -8,79 +8,91 @@ const PROJECTS = [
   {
     id: 1,
     title: "Aegis Secure Sentinel",
-    subtitle: "Security & Surveillance Platform",
+    subtitle: "Security and surveillance platform",
     description:
-      "Enterprise-grade security management system with facial recognition using AWS Rekognition, real-time WebSocket alerts, QR-based access control, and a comprehensive analytics dashboard with interactive charts.",
+      "Security management system with facial recognition, real-time WebSocket alerts, QR-based access control, and an analytics dashboard for monitoring operations.",
     tech: ["Java 17", "Spring Boot", "Angular 16", "AWS S3", "AWS Rekognition", "WebSocket", "MySQL", "Chart.js", "Tailwind"],
     role: "Full-Stack Developer",
     highlights: ["Facial Recognition", "Real-time Alerts", "QR Access Control", "Analytics Dashboard"],
-    color: "#ff6b6b", // Coral
+    color: "#ff6b6b",
   },
   {
     id: 2,
     title: "GlobalTrade Nexus",
-    subtitle: "International Banking & Trade System",
+    subtitle: "International banking and trade system",
     description:
-      "Robust international banking portal with role-based access, secure JWT authentication, multi-country support, and comprehensive trade transaction management. Built for handling complex financial workflows.",
+      "International banking portal with role-based access, secure JWT authentication, multi-country support, and trade transaction management.",
     tech: ["Java 17", "Spring Boot", "Angular 16", "Spring Security", "JWT", "MySQL"],
     role: "Full-Stack Developer",
     highlights: ["JWT Authentication", "Role-based Access", "Multi-country Support", "Trade Management"],
-    color: "#38bdf8", // Sky
+    color: "#38bdf8",
   },
   {
     id: 3,
     title: "CommuniTree Mobile",
-    subtitle: "Cross-Platform Community App",
+    subtitle: "Cross-platform community app",
     description:
-      "Community management platform delivered as a native mobile app using Capacitor. Features include Firebase push notifications, speech recognition, and a complete member management system with real-time updates.",
+      "Community management platform delivered as a mobile app using Capacitor with push notifications, speech recognition, and real-time member updates.",
     tech: ["Java 17", "Spring Boot", "Angular 16", "Capacitor", "Firebase", "iOS", "Android"],
     role: "Full-Stack & Mobile Developer",
     highlights: ["Native Mobile App", "Push Notifications", "Speech Recognition", "Cross-Platform"],
-    color: "#a3e635", // Lime
+    color: "#a3e635",
   },
   {
     id: 4,
     title: "Apex Management Suite",
-    subtitle: "Modern Admin Panel",
+    subtitle: "Modern admin panel",
     description:
-      "Feature-rich admin dashboard built with React 19 and Material UI. Includes advanced data tables, animated celebrations, real-time toast notifications, and comprehensive CRUD operations for organization management.",
+      "Admin dashboard built with React 19 and Material UI. Includes data tables, toast notifications, and CRUD workflows for organization management.",
     tech: ["React 19", "Vite", "Material UI", "Axios", "React Router", "TypeScript"],
     role: "Frontend Developer",
     highlights: ["React 19", "Material UI", "Toast Notifications", "Admin CRUD"],
-    color: "#fb923c", // Orange
+    color: "#fb923c",
   },
   {
     id: 5,
     title: "Solaris Digital Hub",
-    subtitle: "Business Landing Platform",
+    subtitle: "Business landing platform",
     description:
-      "High-performance business website built with Next.js 15 featuring smooth Swiper carousels, EmailJS contact integration, syntax highlighting, and Isotope-based dynamic content filtering with stunning animations.",
+      "Business website built with Next.js 15 featuring Swiper carousels, EmailJS contact integration, and dynamic content filtering.",
     tech: ["Next.js 15", "React 18", "Bootstrap 5", "Swiper", "EmailJS", "SCSS"],
     role: "Frontend Developer",
     highlights: ["Next.js 15", "Swiper Carousels", "Email Integration", "Dynamic Filtering"],
-    color: "#fb7185", // Rose
+    color: "#fb7185",
   },
   {
     id: 6,
     title: "ScholarStream Portal",
-    subtitle: "Educational Institute Website",
+    subtitle: "Educational institute website",
     description:
-      "Modern, responsive website for an educational institute built with Next.js. Features student galleries, course information, admission workflows, and optimized SEO for local discovery.",
+      "Responsive website for an educational institute with student galleries, course details, admission workflows, and local SEO support.",
     tech: ["Next.js", "React", "CSS3", "SEO"],
     role: "Full-Stack Developer",
     highlights: ["Student Gallery", "Course Management", "SEO Optimized", "Responsive Design"],
-    color: "#d946ef", // Fuchsia
+    color: "#d946ef",
   },
   {
     id: 7,
     title: "TradeMatrix Core API",
-    subtitle: "Trade Data Management API",
+    subtitle: "Trade data management API",
     description:
-      "Scalable REST API backend for managing international export/import data. Features Excel file processing with Apache POI, secure endpoints with Spring Security, and efficient data pipelines for trade analytics.",
+      "REST API backend for international export and import data with Excel file processing, secure endpoints, and analytics-ready pipelines.",
     tech: ["Java 17", "Spring Boot", "Spring Security", "MySQL", "Apache POI", "Lombok"],
     role: "Backend Developer",
     highlights: ["Excel Processing", "REST APIs", "Data Pipelines", "Secure Endpoints"],
-    color: "#2dd4bf", // Teal
+    color: "#2dd4bf",
+  },
+  {
+    id: 8,
+    title: "Yukti Classes",
+    subtitle: "Educational coaching website",
+    description:
+      "Modern website for Yukti Classes with clear course information, a clean contact flow, and a mobile-friendly layout for students and parents.",
+    tech: ["Next.js", "React", "SEO", "Responsive Design"],
+    role: "Website Developer",
+    highlights: ["Admissions", "Course Pages", "Lead Enquiries", "Mobile Friendly"],
+    color: "#4f86c6",
+    website: "https://yukticlasses.com",
   },
 ];
 
@@ -121,8 +133,8 @@ export default function Projects() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2 }}
         >
-          Each project represents a unique challenge — from facial recognition
-          systems to cross-platform mobile apps.
+          A few selected builds from client work and internal projects, spanning
+          education, finance, APIs, and mobile experiences.
         </motion.p>
 
         <motion.div
@@ -154,10 +166,7 @@ export default function Projects() {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
               >
-                <div
-                  className={styles.cardGlow}
-                  style={{ background: project.color }}
-                />
+                <div className={styles.cardGlow} style={{ background: project.color }} />
                 <div className={styles.cardInner}>
                   <div className={styles.cardHeader}>
                     <div
@@ -195,9 +204,17 @@ export default function Projects() {
                   </div>
 
                   <div className={styles.cardFooter}>
-                    <span className={styles.role}>
-                      💼 {project.role}
-                    </span>
+                    <span className={styles.role}>{project.role}</span>
+                    {project.website && (
+                      <a
+                        href={project.website}
+                        className={styles.projectLink}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Visit Website
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>

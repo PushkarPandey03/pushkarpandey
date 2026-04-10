@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Pushkar Pandey — Full-Stack Java Developer",
+  title: "Pushkar Pandey - Full-Stack Java Developer",
   description:
     "Portfolio of Pushkar Pandey, a Full-Stack Java Developer with 2+ years of experience building enterprise web applications with Spring Boot, Angular, React, and Next.js.",
   keywords: [
@@ -16,7 +16,7 @@ export const metadata = {
   ],
   authors: [{ name: "Pushkar Pandey" }],
   openGraph: {
-    title: "Pushkar Pandey — Full-Stack Java Developer",
+    title: "Pushkar Pandey - Full-Stack Java Developer",
     description:
       "Crafting robust, scalable web applications from backend to frontend.",
     type: "website",

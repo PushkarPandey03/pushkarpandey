@@ -80,7 +80,7 @@ export default function Skills() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           From designing robust backend architectures to building responsive,
-          dynamic user interfaces — these are the tools I use daily.
+          dynamic user interfaces, these are the tools I use daily.
         </motion.p>
 
         <div className={styles.categories}>

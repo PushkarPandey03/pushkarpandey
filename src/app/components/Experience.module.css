@@ -31,11 +31,12 @@
 }
 
 .milestoneCard {
-  background: var(--bg-card);
+  background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 24px;
   transition: var(--transition-smooth);
+  box-shadow: var(--shadow-card);
 }
 
 .milestoneCard:hover {
@@ -92,7 +93,7 @@
 }
 
 .points li::before {
-  content: '▹';
+  content: "•";
   position: absolute;
   left: 0;
   color: var(--color-amber);

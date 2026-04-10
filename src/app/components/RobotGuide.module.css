@@ -17,7 +17,7 @@
   background: var(--bg-secondary);
   border: 1px solid var(--border-accent);
   border-radius: var(--radius-md);
-  box-shadow: 0 8px 32px rgba(34, 211, 238, 0.15);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
 }
 
 .speechText {
@@ -55,12 +55,12 @@
   width: 90px;
   height: 120px;
   cursor: pointer;
-  filter: drop-shadow(0 4px 16px rgba(34, 211, 238, 0.2));
+  filter: drop-shadow(0 4px 16px rgba(15, 23, 42, 0.12));
   transition: filter 0.3s;
 }
 
 .robot:hover {
-  filter: drop-shadow(0 8px 24px rgba(34, 211, 238, 0.4));
+  filter: drop-shadow(0 8px 24px rgba(79, 134, 198, 0.22));
 }
 
 .robotSvg {
@@ -69,7 +69,7 @@
 }
 
 .antennaBall {
-  filter: drop-shadow(0 0 6px rgba(34, 211, 238, 0.6));
+  filter: drop-shadow(0 0 6px rgba(79, 134, 198, 0.5));
 }
 
 @media (max-width: 1024px) {

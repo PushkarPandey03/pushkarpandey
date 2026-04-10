@@ -34,15 +34,15 @@ export default function Footer() {
             <a href="mailto:pandeypushkar333@gmail.com" className={styles.footerLink}>
               pandeypushkar333@gmail.com
             </a>
-            <a href="tel:+919511237284" className={styles.footerLink}>
-              +91 9511237284
+            <a href="tel:9511237284" className={styles.footerLink}>
+              9511237284
             </a>
           </div>
         </div>
 
         <div className={styles.bottom}>
           <p className={styles.copyright}>
-            © {year} Pushkar Pandey. Crafted with passion & lots of ☕
+            © {year} Pushkar Pandey. Crafted with care and a lot of coffee.
           </p>
         </div>
       </div>

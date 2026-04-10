@@ -56,7 +56,6 @@ export default function Hero() {
         <div className={`${styles.orb} ${styles.orb3}`} />
       </div>
 
-      {/* Floating code snippets */}
       <div className={styles.floatingCode}>
         <motion.div
           className={styles.codeBlock}
@@ -128,9 +127,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45 }}
         >
-          I craft robust, scalable applications from database to pixel. Specializing
-          in Spring Boot microservices and modern JavaScript frameworks to deliver
-          seamless digital experiences.
+          I build practical web applications from backend to frontend, with a focus
+          on clean APIs, reliable systems, and polished user experiences.
         </motion.p>
 
         <motion.div
